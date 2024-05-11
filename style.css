@@ -146,6 +146,18 @@ a:hover {
   transform: none;
 }
 
+/* Down icon at bottom of page */
+
+.arrow {
+  position: absolute;
+  height:25px;
+  bottom: 2.5rem;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
 /* SECTIONS */
 
 section {
@@ -163,14 +175,19 @@ section {
 /* PROFILE SECTION */
 
 #profile {
+  position: relative;
   display: flex;
   justify-content: center;
+  flex-direction: row;
   gap: 5rem;
   height: 80vh;
 }
 
 .section__pic-container {
   display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
   height: 400px;
   width: 400px;
   margin: auto 0;
@@ -178,30 +195,40 @@ section {
 
 .section__pic-container img {
 border-radius: 50%;
+height: 230px;
 }
 
 .section__text {
-  align-self: center;
-  text-align: center;
+  margin-top: 175px;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
 }
 
 .section__text p {
   font-weight: 600;
+ 
 }
 
 .section__text__p1 {
-  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 1.0rem;
+  margin-bottom: 0.5rem;
 }
 
 .title {
   font-size: 3rem;
   text-align: center;
 }
+
+.title img{
+  height:15vh;
+}
+/* this needs too be moved */
 
 #socials-container {
   display: flex;
@@ -291,11 +318,11 @@ border-radius: 50%;
   border-radius: 2rem;
 }
 
-.arrow {
+/* .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
-}
+} */
 
 .details-container {
   padding: 1.5rem;
@@ -357,6 +384,13 @@ article .icon {
   cursor: default;
 }
 
+.down-icon {
+ display:flex;
+ justify-content: center;
+}
+
+
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -368,10 +402,16 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 
+.project-img:hover {
+  opacity:0.2;
+ 
+}
+
 .project-img {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+ 
 }
 
 .project-title {
@@ -433,4 +473,17 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* At key frames */
+
+@keyframes bouncing {
+  0% {bottom: 0;}
+  50% {bottom: 20px;}
+  100% {bottom: 0;}
+}
+
+.arrow {
+  animation: bouncing 2s infinite ease-in-out;
+  
 }

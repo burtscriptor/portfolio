@@ -10,7 +10,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Dave Jnr</div>
+      <div class="logo"></div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Dave Jnr</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -36,16 +36,17 @@
         </div>
       </div>
     </nav>
+
+    
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-db.jpg" alt="Dave Jnr profile picture" />
-      </div>
+      
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Dave Jnr</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
+        <h1 class="section__text__p1">Hello! I'm Dave.</h1>
+        <h1 class="title"></h1>
+        <p class="section__text__p2">A multidisciplinary Software Engineer and rock climber {at times} with </p>
+        <p class="section__text__p2"> apassion for helping others and creating digital solutions.</p>
+        <!-- <div class="btn-container"> -->
+          <!-- <button
             class="btn btn-color-2"
             onclick="window.open('./assets/resume.pdf')"
           >
@@ -54,8 +55,8 @@
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
-        </div>
-        <div id="socials-container">
+        </div> -->
+        <!-- <div id="socials-container">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
@@ -68,11 +69,108 @@
             class="icon"
             onclick="location.href='https://https://github.com/burtscriptor'"
           />
+        </div> -->
+      </div>
+        <div class="section__pic-container">
+          <img src="./assets/avatarmaker.svg" alt="Dave Jnr profile picture" />
+        </div>
+        <img  src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="arrow"
+          onclick="location.href='./#projects'"
+        />
+
+    </section>
+
+    <section id="projects">
+      <!-- <p class="section__text__p1">Browse My Recent</p> -->
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="down-icon">
+        <img  src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="arrow"
+        onclick="location.href='./#about'" />
+      </div>
     </section>
+
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
+      <!-- <p class="section__text__p1">Get To Know More</p> -->
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
@@ -115,16 +213,19 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
+      <div class="down-icon">
+        <img  src="./assets/arrow.png"
         alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+        class="arrow"
+        onclick="location.href='./#experience'" />
+      </div>
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Toolkit</h1>
+      <!-- <p class="section__text__p1">Explore My</p> -->
+      <div class="title">
+      <img src="./assets//icons/toolbox.png">
+        </div>
+      
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
@@ -259,101 +360,17 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      <div class="down-icon">
+      <img  src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="arrow"
+      onclick="location.href='./#contact'"" />
+    </div>
+      
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+    
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
+      <!-- <p class="section__text__p1">Get in Touch</p> -->
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -381,7 +398,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+           
           </ul>
         </div>
       </nav>
